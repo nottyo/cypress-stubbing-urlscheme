@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>URL Scheme Navigation example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function setLocationHref(url) {
+                window.location.href = url
+            }
+            // visible for testing
+            window.setLocationHref = setLocationHref
+            
+            function clickme() {
+                window.setLocationHref("tel://0212345678")
+            }
+        </script>
+        <button onclick="clickme()" id="clickme" data-at="clickme" value="Click me!">Click Me!</button>
+    </body>
+</html>
