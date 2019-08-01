@@ -1,4 +1,4 @@
-# cypress-stubbing-urlscheme
+# cypress-stubbing-urlscheme e.g. tel://, mailto:// or any custom scheme
 ## without stub
 You should see this error because Cypress doesn't allow you to navigate outside the app
 ![Without Stub](https://raw.githubusercontent.com/nottyo/cypress-stubbing-urlscheme/master/without_stub.png "Without Stub")
