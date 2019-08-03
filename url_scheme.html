@@ -7,11 +7,11 @@
             function setLocationHref(url) {
                 window.location.href = url
             }
-            // visible for testing
+            // visible for testing (only if this page is openning by Cypress Test Runner)
             window.setLocationHref = setLocationHref
             
             function clickme() {
-                window.setLocationHref("tel://0212345678")
+                setLocationHref("tel://0212345678")
             }
         </script>
         <button onclick="clickme()" id="clickme" data-at="clickme" value="Click me!">Click Me!</button>

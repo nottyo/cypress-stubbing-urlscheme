@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Simple Stub with Cypress.io</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            function clickme() {
+                var name = window.confirm("Are you hungry?")
+                if (name) {
+                    document.getElementById("result").innerHTML = "Yes, you're hungry."
+                } else {
+                    document.getElementById("result").innerHTML = "No, you're full."
+                }
+            }
+        </script>
+        <p>Please click button to display a window confirm dialog</p>
+        <button data-at="clickme" onclick="clickme()">Click Me</button>
+        <div data-at="result" id="result"></div>
+    </body>
+</html>

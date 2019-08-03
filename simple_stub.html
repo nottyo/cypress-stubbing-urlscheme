@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Simple Stub with Cypress.io</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function clickme() {
+                var name = window.prompt("Please enter your name.")
+                if (name) {
+                    document.getElementById("result").innerHTML = "Hello " + name + " !"
+                } else {
+                    document.getElementById("result").innerHTML = "You did not input anything"
+                }
+            }
+        </script>
+        <p>Please click button to display a window promt</p>
+        <button data-at="clickme" onclick="clickme()">Click Me</button>
+        <div data-at="result" id="result"></div>
+    </body>
+</html>
